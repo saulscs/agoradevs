@@ -56,15 +56,15 @@ async (req, res) => {
 
     //Return jsonwebtoken
 
-    const playload = {
-        users:{
+    const payload = {
+        user: {
             id: user.id
         }
-    }
+    };
     jwt.sign(
-        playload, 
+        payload, 
         config.get('jwtSecret'),
-        {expiresIn: 3600000},
+        {expiresIn: 36000000},
         (err, token) => {
             if (err) throw err;
             res.json({ token })
