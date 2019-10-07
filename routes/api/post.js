@@ -100,7 +100,7 @@ router.delete('/:id', auth, async (req, res) => {
       }
       res.status(500).send('Server Error');
     }
-  });
+});
   
 // @route   PUT  api/posts/like/:id
 // @desc     Like a post
@@ -126,7 +126,7 @@ router.put('/like/:id', auth, async (req, res) => {
       console.error(err.message);
       res.status(500).send('Server Error');
     }
-  });
+});
 
 // @route   PUT  api/posts/unlike/:id
 // @desc     Like a post
@@ -156,7 +156,7 @@ router.put('/unlike/:id', auth, async (req, res) => {
       console.error(err.message);
       res.status(500).send('Server Error');
     }
-  });
+});
 
 // @route    POST api/posts/comment/:id
 // @desc     Comment on a post
@@ -185,8 +185,7 @@ router.post('/comment/:id', [auth,[ check('text', 'Text is required').not().isEm
         console.error(err.message);
         res.status(500).send('Server Error');
       }
-    }
-  );
+});
 
 // @route    DELETE api/posts/comment/:id/:comment_id
 // @desc     Delete comment
@@ -220,6 +219,6 @@ router.delete('/comment/:id/:comment_id', auth, async (req, res) => {
       console.error(err.message);
       res.status(500).send('Server Error');
     }
-  });
+});
   
 module.exports = router;
