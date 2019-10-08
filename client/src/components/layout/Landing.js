@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom';
 const Landing = () => {
     return (
     <div>
@@ -12,7 +12,7 @@ const Landing = () => {
                             other developers
             </p>
             <div className="buttons">
-                <a className="btn btn-primary" href="register.html">Join Now!</a>
+                <Link className="btn btn-primary" to="/register">Join Now!</Link>
             </div>
         </div>
     </div>
@@ -71,35 +71,6 @@ const Landing = () => {
         </div>
     </div>
 </section>
-    
-<footer className="footer bg-navbar">
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/">Contact</a>
-        </li>
-        <li>
-            <a href="/">Support</a>
-        </li>
-    </ul>
-    <ul>
-        <a href="/">
-            <i className="fab fa-facebook-square"></i>
-        </a>
-        <a href="/">
-            <i className="fab fa-twitter-square"></i>
-        </a>
-        <a href="/">
-            <i className="fab fa-instagram"></i>
-        </a>
-    </ul>
-    <ul>
-        <li><a href="/">© Agora Devs 2019</a></li>
-        <li><a href="https://saulcorona.com" target="_blank" rel="noopener noreferrer">Made with love by Saúl Corona</a></li>
-    </ul>
-</footer>
     </div>
     
     )
