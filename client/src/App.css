@@ -752,11 +752,12 @@ img {
     width: 100%;
   }
   .footer {
+    display: none;
     margin-top: 645px;
     bottom: 0px;
   }
   .footer ul {
-    display: block;
+    display: none;
   }
   .dash-buttons a {
     display: block;
