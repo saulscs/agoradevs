@@ -692,7 +692,8 @@ img {
           justify-content: space-between;
   padding: 0.7rem 2rem;
   width: 100%;
-  top: 0;
+  bottom: 0;
+  position: fixed;
 }
 
 .footer ul {
