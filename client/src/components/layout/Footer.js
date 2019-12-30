@@ -27,7 +27,7 @@ const Footer = () => {
         </a>
     </ul>
     <ul>
-        <li><a href="/">© Agora Devs 2019</a></li>
+        <li><a href="/">© Agora Devs 2020</a></li>
         <li><a href="https://saulcorona.com" target="_blank" rel="noopener noreferrer">Made with love by Saúl Corona</a></li>
     </ul>
 </footer>
