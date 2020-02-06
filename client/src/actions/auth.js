@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {setAlert} from './alerts';
+
 import {REGISTER_SUCCESS, 
         REGISTER_FAIL,
         USER_LOADED,
@@ -95,3 +96,6 @@ export const logout = () => dispatch => {
     dispatch({type: CLEAR_PROFILE });
     dispatch({type: LOGOUT});
 }
+
+
+
