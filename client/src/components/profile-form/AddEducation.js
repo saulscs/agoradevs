@@ -86,7 +86,7 @@ const AddEducation = ({addEducation, history}) => {
               onChange = {e => {
                   setFormData({...formData,current: !current})
                   toggleDisabled( !toDateDisabled)
-}} /> {''}Current Job</p>
+              }} /> {''}Current Job</p>
         </div>
         <div class="form-group">
           <textarea
