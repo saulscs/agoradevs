@@ -297,7 +297,7 @@
 .form select,
 .form textarea {
   display: initial;
-  width: 50%;
+  width: 100%;
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
