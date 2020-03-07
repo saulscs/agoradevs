@@ -6,7 +6,7 @@ import {
     ADD_POST,
     GET_POST, 
     ADD_COMMENT,
-    REMOVE_ALERT
+    REMOVE_COMMENT
 } from '../actions/types'
 
 
@@ -64,7 +64,7 @@ export default function(state = initialState,action){
                 post: { ...state.post, comments: payload},
                 loading: false
             }
-        case REMOVE_ALERT:
+        case REMOVE_COMMENT:
             return {
                 ...state,
                 post: {
